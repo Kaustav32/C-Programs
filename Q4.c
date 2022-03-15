@@ -2,18 +2,15 @@
 int main()
 {
     printf("\n Kaustav Chamola");
-    float pol, psy, eng, eco, ip;
-    printf("\n Enter the marks of Political Science: ");
-    scanf("%f", &pol);
-    printf("Enter the marks of Psychology: ");
-    scanf("%f", &psy);
-    printf("Enter the marks of English: ");
-    scanf("%f", &eng);
-    printf("Enter the marks of Economics: ");
-    scanf("%f", &eco);
-    printf("Enter the marks of IP: ");
-    scanf("%f", &ip);
-    float p = (pol + psy + eng + eco + ip) / 500 * 100;
-    printf("The total percentage of all 5 subjects is: %f", p);
+    int arr[10];
+    int *ptr = arr;
+    int n;
+    printf("\n enter the number of which you want the multiplication table: ");
+    scanf("%d", &n);
+    for (int i = 0; i < 10; i++)
+    {
+        arr[10] = n * (i + 1);
+        printf("\n %d x %d = %d", n, i+1 , arr[10]);
+    }
     return 0;
 }

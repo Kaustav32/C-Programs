@@ -2,8 +2,9 @@
 int main()
 {
     printf("\n Kaustav Chamola");
-    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int arr[5] = {1,2,3,4,5};
     int *ptr = arr;
-    printf("3rd element of array is: %u", *(ptr + 2));
+    printf("here: %d\n", arr[0]);
+    printf("here: %d", *(&ptr[0]));
     return 0;
 }
